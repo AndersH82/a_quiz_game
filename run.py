@@ -205,3 +205,15 @@ if answer.lower() == 'yes':
      print(green + 'Correct')
   else:
      print(red + 'Wrong Answer')
+
+"""
+This is a function that prints out the score and the percentage of and thanks the player for playing the game.
+""" 
+
+print(
+    blue + 'Thanks ' + user_name +
+    ' for playing this my fun quiz game, you attempted', score,
+    "questions correctly!")
+(score) = (score / total_questions) * 100
+print(user_name, 'you got ' + str(score), 'points.')
+print(yellow + 'Thanks for playing. BYE! BYE!')    
