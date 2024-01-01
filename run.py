@@ -1,3 +1,15 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+"""
+This is a simple Quiz Game that asks the user a series of questions and checks their answers.
+"""
+
+from colored import fg
+
+"""
+This is a function that prints out a message with a colored background.
+"""
+
+blue = fg('blue')
+red = fg('red')
+green = fg('green')
+yellow = fg('yellow')
+white = fg('white')
