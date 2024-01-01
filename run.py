@@ -20,3 +20,14 @@ This is a function that lets player input their name.
 
 user_name = input('Enter your name: ')
 print('Welcome ' + user_name + ' to my Quiz Game.')
+
+"""
+This is a function makes player choosing if thy want to read the rules or not.
+"""
+
+answer = input('Do you wanna read the rules? (yes/no) :')
+if answer.lower() == 'yes':
+  print(
+      green +
+      'This is a Quiz Game with 20 questions. You will type in the answer to the question. If you get the answer right you will get a point. If you get the answer wrong you will not. Answer all your questions in lowercase. Good Luck '
+      + user_name + '!')
