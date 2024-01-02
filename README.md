@@ -2,17 +2,17 @@
 
 ## Welcome,
 
-This is a small game called a-quiz-game. As its sounds it is a Quiz Game and its 20 questions for the player to answer.
+This is a small game called a-quiz-game. As it sounds, it is a Quiz Game and it has 20 questions for the player to answer.
 
 ## Structure of the game
 
-- The player start the game by entering player name.
+- The player starts the game by entering the player's name.
 ``` 
 user_name = input('Enter your name: ')
 print('Welcome ' + user_name + ' to my Quiz Game.')
 ```
 
-- Then the player gonna get a question to answer if player wanna read the rulse yes or no.
+- Then the player gonna get a question to answer if the player wanna read the rules yes or no.
 ```
 answer = input('Do you wanna read the rules? (yes/no) :')
 if answer.lower() == 'yes':
@@ -24,11 +24,11 @@ if answer.lower() == 'yes':
         'If you get the answer wrong you will not.'
         'Answer all your questions in lowercase. Good Luck ' + user_name + '!')
 ```
-- After you answer the rules question the computer ask you to answer if u wanna play game.
+- After you answer the rules question the computer asks you to answer if u wanna play a game.
 ```
 answer = input(white + 'Are you ready to play my Quiz Game ? (yes/no) :')
 ```
-- Then the games starts if the player answer yes.
+- Then the game starts if the player answers yes.
 
 ```
 answer = input(yellow +
@@ -52,7 +52,7 @@ print(yellow + 'Thanks for playing. BYE! BYE!')
 ```
 
 ## Rules
-- Here u have the ruls of the game.
+- Here u have the rules of the game.
 - You can choose to read the rules or not.
 - The rules are simple.
 
@@ -63,7 +63,7 @@ print(yellow + 'Thanks for playing. BYE! BYE!')
 - Codeanywear - codeanywhere.com for coding
 - Github - github.com for deployment
 - Replit - replit.com for coding
-- Grammarly - grammarly.com for gramar and spelling
+- Grammarly - grammarly.com for grammar and spelling
 - Mentimeter - mentimeter.com for questions
 - Studytonight - studytonight.com  for coloring the text
 - W3schools - w3schools.com for input codes
@@ -73,8 +73,8 @@ print(yellow + 'Thanks for playing. BYE! BYE!')
 
 ## Style error
 
-Have made a PEP8 style check and it warns me for an issue code: W292
+Have made a PEP8 style check and it warns me of an issue code: W292
 
-- File should end with a newline, i have tried but cant get that to be fixed. Its not a problem for the game just a style thing.
+The file should end with a newline, I have tried but can't get that to be fixed. It is not a problem for the game just a style thing.
 
-![](image-readme/pep8stylecheck.png)
+![](image-readme/pep8stylecheck.png)  
