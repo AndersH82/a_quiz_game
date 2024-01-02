@@ -22,7 +22,7 @@ user_name = input('Enter your name: ')
 print('Welcome ' + user_name + ' to my Quiz Game.')
 
 """
-This is a function makes player choosing if thy want to read the rules or not.
+This is a function that makes players choose if they want to read the rules or not.
 """
 
 answer = input('Do you wanna read the rules? (yes/no) :')
@@ -40,7 +40,8 @@ answer = input(white + 'Are you ready to play my Quiz Game ? (yes/no) :')
 score = 0
 total_questions = 20
 
-"""This is the function of all 20 questions for player to answer correct or wrong answer.
+"""
+This is the function of all 20 questions for the players to answer correct or wrong answer.
 """
 
 if answer.lower() == 'yes':
@@ -206,12 +207,12 @@ else:
     print(red + 'Wrong Answer')
 
 """
-This is a function that prints out the score and the percentage of and thanks the player for playing the game.
+This is a function that prints out the score and the percentage and thanks the player for playing the game.
 """ 
 
 print(
     blue + 'Thanks ' + user_name +
-    ' for playing this my fun quiz game, you attempted', score,
+    ' for playing my fun quiz game, you attempted', score,
     "questions correctly!")
 (score) = (score / total_questions) * 100
 print(user_name, 'you got ' + str(score), 'points.')
