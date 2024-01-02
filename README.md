@@ -60,12 +60,21 @@ print(yellow + 'Thanks for playing. BYE! BYE!')
 
 ## Program and libraries used
 
-- Codeanywear - codeanywhere.com
-- Github - github.com   
-- Replit - replit.com
-- Grammarly - grammarly.com
-- Mentimeter - mentimeter.com
-- Studytonight - studytonight.com
-- W3schools - w3schools.com 
-- Youtube - youtube.com
-- Codewof - Codewof.co.nz
+- Codeanywear - codeanywhere.com for coding
+- Github - github.com for deployment
+- Replit - replit.com for coding
+- Grammarly - grammarly.com for gramar and spelling
+- Mentimeter - mentimeter.com for questions
+- Studytonight - studytonight.com  for coloring the text
+- W3schools - w3schools.com for input codes
+- Youtube - youtube.com for research
+- Codewof - codewof.co.nz for checking the PEP8 style
+- Heroku - heroku.com for deployment
+
+## Style error
+
+Have made a PEP8 style check and it warns me for an issue code: W292
+
+- File should end with a newline, i have tried but cant get that to be fixed. Its not a problem for the game just a style thing.
+
+![](image-readme/pep8stylecheck.png)
