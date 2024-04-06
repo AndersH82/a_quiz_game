@@ -7,6 +7,11 @@
 # Overview
 
 Welcome to the Quiz Game! This is a simple yet engaging command-line quiz game developed in Python. The game consists of 20 questions, covering a wide range of topics from pop culture to geography. The objective is to answer the questions correctly to earn points. The game is designed to be fun and educational, making it a great way to test your knowledge or learn something new.
+<br>
+<br>
+<p align="center">
+<img src="image-readme/landingpage.png" alt="Responsive Image" style="border-radius: 20px; width: 400px; height: 350px;">
+</p>
 
 ## Features
 
@@ -32,6 +37,7 @@ pip install colored
 ```
 
 ## Usage
+- Here you can find the repository [click here](https://github.com/AndersH82/a_quiz_game.git)
 - Clone the repository or download the `run.py` file.
 - Open your terminal or command prompt.
 - Navigate to the directory containing `run.py`.
@@ -41,6 +47,8 @@ pip install colored
 python run.py
 ```
 - Follow the on-screen instructions to play the game.
+
+- If you don't want to play in the terminal, you can go [here](https://a-quiz-game-69878e1225dc.herokuapp.com/)  and there to play via the browser.
 
 ## Program and libraries used
 
@@ -105,6 +113,9 @@ pip install pycodestyle
 ```
 pycodestyle run.py
 ```
+## Deployment
+
+Quiz Game is deployed on Heroku.com and you can see the app here [click here](https://a-quiz-game-69878e1225dc.herokuapp.com/) 
 
 ## Contributing
 Contributions to the Quiz Game are welcome! If you have suggestions for new questions or improvements to the game, please feel free to open an issue or submit a pull request.
