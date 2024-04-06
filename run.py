@@ -17,6 +17,13 @@ This is a function that lets player input their name.
 """
 
 user_name = input('Enter your name: ')
+user_name = user_name.strip()
+
+while not user_name:
+    print("You must enter a name. Please try again.")
+    user_name = input('Enter your name: ')
+    user_name = user_name.strip()
+    
 print('Welcome ' + user_name + ' to my Quiz Game.')
 
 """
