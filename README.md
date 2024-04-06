@@ -1,55 +1,20 @@
-![](image-readme/responsive.png)
+<h1 style="text-align: center;"><strong>QUIZ GAME</strong></h1>
 
-## Welcome,
+<p align="center">
+<img src="image-readme/responsive.png" alt="Responsive Image" style="border-radius: 100px; width: 400px; height: 350px;">
+</p>
 
-This is a small game called a-quiz-game. As it sounds, it is a Quiz Game and it has 20 questions for the player to answer.
+# Overview
 
-## Structure of the game
+Welcome to the Quiz Game! This is a simple yet engaging command-line quiz game developed in Python. The game consists of 20 questions, covering a wide range of topics from pop culture to geography. The objective is to answer the questions correctly to earn points. The game is designed to be fun and educational, making it a great way to test your knowledge or learn something new.
 
-- The player starts the game by entering the player's name.
-``` 
-user_name = input('Enter your name: ')
-print('Welcome ' + user_name + ' to my Quiz Game.')
-```
+## Features
 
-- Then the player gonna get a question to answer if the player wanna read the rules yes or no.
-```
-answer = input('Do you wanna read the rules? (yes/no) :')
-if answer.lower() == 'yes':
-    print(
-        green +
-        'This is a Quiz Game with 20 questions.'
-        'You will type in the answer to the question.'
-        'If you get the answer right you will get a point.'
-        'If you get the answer wrong you will not.'
-        'Answer all your questions in lowercase. Good Luck ' + user_name + '!')
-```
-- After you answer the rules question the computer asks you to answer if u wanna play a game.
-```
-answer = input(white + 'Are you ready to play my Quiz Game ? (yes/no) :')
-```
-- Then the game starts if the player answers yes.
-
-```
-answer = input(yellow +
-                   'Question 1: Who has won the most total Academy Awards? ')
-if answer.lower() == 'walt disney':
-    score += 1
-    print(green + 'Correct')
-else:
-    print(red + 'Wrong Answer')
-```
-- When the game is over the player gets the score of correct answer and percentage.
-
-```
-print(
-    blue + 'Thanks ' + user_name +
-    ' for playing my fun quiz game, you attempted', score,
-    "questions correctly!")
-(score) = (score / total_questions) * 100
-print(user_name, 'you got ' + str(score), 'points.')
-print(yellow + 'Thanks for playing. BYE! BYE!')
-```
+- Colorful Interface: The game uses the colored library to display text in different colors, making it more visually appealing and easier to follow.
+- User Input Validation: The game includes functions to validate user input, ensuring that the user provides a valid answer for each question.
+- Quiz Rules and Instructions: Before starting the game, users have the option to read the rules. This includes information about the game's structure, scoring system, and how to answer questions.
+- Score Calculation: At the end of the game, the user's score is calculated based on the number of correct answers, and the percentage of correct answers is displayed.
+- Unit Testing: The game includes unit tests to ensure the functionality of the input validation functions works as expected.
 
 ## Rules
 - Here u have the rules of the game.
@@ -57,6 +22,25 @@ print(yellow + 'Thanks for playing. BYE! BYE!')
 - The rules are simple.
 
 ![](image-readme/rules.png)
+
+## Installation
+
+To play the Quiz Game, you need to have Python installed on your system. The game uses the `colored` library for colored output, so you will need to install it using pip:
+
+```
+pip install colored
+```
+
+## Usage
+- Clone the repository or download the `run.py` file.
+- Open your terminal or command prompt.
+- Navigate to the directory containing `run.py`.
+- Run the game by executing the following command:
+
+```
+python run.py
+```
+- Follow the on-screen instructions to play the game.
 
 ## Program and libraries used
 
@@ -70,11 +54,57 @@ print(yellow + 'Thanks for playing. BYE! BYE!')
 - Youtube - youtube.com for research
 - Codewof - codewof.co.nz for checking the PEP8 style
 - Heroku - heroku.com for deployment
+- Unittest - for testing the code
+- Pycodstyle - testing of code style
 
-## Style error
+## Testing
 
-Have made a PEP8 style check and it warns me of an issue code: W292
+#### Unittest
 
-The file should end with a newline, I have tried but can't get that to be fixed. It is not a problem for the game just a style thing.
+The `test.py` script uses the `unittest` framework for structuring and running the tests. It also leverages the `unittest.mock` library to simulate user input during testing, ensuring that the tests are deterministic and do not depend on actual user interaction.
 
-![](image-readme/pep8stylecheck.png)  
+#### Test Cases
+
+`test_get_yes_no_input_yes`: Tests the `get_yes_no_input` function with a mocked input of 'yes'.
+`test_get_yes_no_input_no`: Tests the `get_yes_no_input` function with a mocked input of 'no'.
+`test_get_yes_no_input`: Tests the `get_yes_no_input` function with a mocked input of 'yes' for a different prompt.
+`test_get_non_blank_input`: Tests the `get_non_blank_input` function with a mocked input of 'john'.
+
+#### Running the test
+To run the tests, execute the following command in your terminal:
+
+```
+python -m unittest test.py
+```
+
+#### Dependencies
+
+Python 3.3 or higher
+unittest and unittest.mock libraries (included in the Python Standard Library)
+
+#### Result
+
+<img src="image-readme/test.png">
+
+### PEP8 test
+
+#### How to run pycodestyle test
+
+To run a `pycodestyle` test, you can either use the command line interface or integrate it into your Python code for automated testing. Here's how to do both:
+
+#### Using the Command Line Interface
+
+- Installation: First, ensure `pycodestyle` is installed. If not, you can install it using pip:
+
+```
+pip install pycodestyle
+```
+
+- Running pycodestyle: To check a Python file or directory for PEP 8 compliance, use the following command:
+
+```
+pycodestyle run.py
+```
+
+## Contributing
+Contributions to the Quiz Game are welcome! If you have suggestions for new questions or improvements to the game, please feel free to open an issue or submit a pull request.
