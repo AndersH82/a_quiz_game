@@ -8,6 +8,8 @@ yellow = fg('yellow')
 white = fg('white')
 
 # Function to get non-blank input
+
+
 def get_non_blank_input(question):
     while True:
         answer = input(question)
@@ -17,6 +19,8 @@ def get_non_blank_input(question):
             print("Please provide an answer.")
 
 # Function to validate user input for yes/no questions
+
+
 def get_yes_no_input(question):
     while True:
         answer = input(question).strip().lower()
@@ -26,6 +30,8 @@ def get_yes_no_input(question):
             print("Please enter 'yes' or 'no'.")
 
 # Get user name
+
+
 user_name = input('Enter your name: ')
 while not user_name:
     print("You must enter a name. Please try again.")
@@ -34,7 +40,8 @@ while not user_name:
 print('Welcome ' + user_name + ' to my Quiz Game.')
 
 # Check if user wants to read the rules
-if get_yes_no_input(green + 'Do you wanna read the rules? (yes/no) :') == 'yes':
+if get_yes_no_input(
+        green + 'Do you wanna read the rules? (yes/no) :') == 'yes':
     print(
         green +
         'This is a Quiz Game with 20 questions.'
@@ -44,7 +51,8 @@ if get_yes_no_input(green + 'Do you wanna read the rules? (yes/no) :') == 'yes':
         'Answer all your questions in lowercase. Good Luck ' + user_name + '!')
 
 # Check if user is ready to play
-if get_yes_no_input(white + 'Are you ready to play my Quiz Game ? (yes/no) :') == 'yes':
+if get_yes_no_input(
+        white + 'Are you ready to play my Quiz Game ? (yes/no) :') == 'yes':
     score = 0
     total_questions = 20
     questions = [
@@ -52,8 +60,10 @@ if get_yes_no_input(white + 'Are you ready to play my Quiz Game ? (yes/no) :') =
         'What artist has the most streams on Spotify? ',
         'What country drinks the most coffee per capita? ',
         'What sports car company manufactures the 911? ',
-        'What character have both Robert Downey Jr. and Benedict Cumberbatch played? ',
-        'Who famously crossed the Alps with elephants on the way to war with the Romans? ',
+        'What character have both Robert Downey Jr. '\
+        'and Benedict Cumberbatch played? ',
+        'Who famously crossed the Alps with elephants '\
+        'on the way to war with the Romans? ',
         'What is a group of crows called? ',
         'Which is the only body part that is fully grown from birth? ',
         'What planet is closest to the sun? ',
@@ -93,7 +103,8 @@ if get_yes_no_input(white + 'Are you ready to play my Quiz Game ? (yes/no) :') =
     ]
 
     for i, question in enumerate(questions, start=1):
-        user_answer = get_non_blank_input(yellow + 'Question ' + str(i) + ': ' + question)
+        user_answer = get_non_blank_input(
+            yellow + 'Question ' + str(i) + ': ' + question)
         if user_answer == answers[i-1]:
             score += 1
             print(green + 'Correct')
