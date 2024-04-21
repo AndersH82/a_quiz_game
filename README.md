@@ -159,7 +159,7 @@ python run.py
 
 - Random Questions: Instead of a fixed set of questions, randomly select questions from a larger pool. This ensures that each game is unique and challenging.
 
-Flowchart Steps:
+## Flowchart Steps:
 1. Start
 2. Define Colors
 3. Function: get_non_blank_input
