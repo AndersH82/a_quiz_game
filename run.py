@@ -33,9 +33,10 @@ def get_yes_no_input(question):
 
 
 user_name = input('Enter your name: ')
-while not user_name:
-    print("You must enter a name. Please try again.")
+while not user_name.strip() or ' ' in user_name:
+    print("You must enter a name without spaces. Please try again.")
     user_name = input('Enter your name: ')
+
 
 print('Welcome ' + user_name + ' to my Quiz Game.')
 
